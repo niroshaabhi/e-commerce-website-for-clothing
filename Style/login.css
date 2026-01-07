@@ -1,0 +1,129 @@
+/* ================= LOGIN SECTION ================= */
+#login{
+    min-height: calc(100vh - 150px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+    /* Soft shuttle pastel background */
+    background: linear-gradient(
+        135deg,
+        #f3eeef,
+        #eae4f8,
+        #efedea
+    );
+}
+
+/* ================= LOGIN CONTAINER ================= */
+#login .container{
+    width: 600px;
+    padding: 40px 30px;
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow: 0 20px 40px rgba(245, 191, 191, 0.12);
+}
+
+/* ================= HEADINGS ================= */
+#login .container h1{
+    text-align: center;
+}
+
+.section-header{
+    font-size: 36px;
+    margin-bottom: 16px;
+    color: #2d2d2d;
+}
+
+/* ================= FORM ================= */
+#form{
+    margin-top: 30px;
+}
+
+#form label{
+    margin-bottom: 8px;
+    display: block;
+    font-size: 16px;
+    color: #333;
+}
+
+/* ================= INPUTS ================= */
+#form input{
+    height: 50px;
+    width: 100%;
+    padding: 0 18px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background: rgba(255,255,255,0.9);
+    margin-bottom: 24px;
+    color: #111;
+}
+
+#form input:focus{
+    outline: none;
+    border-color: #e9e0ee;
+    box-shadow: 0 0 0 3px rgba(233, 229, 235, 0.3);
+}
+
+/* ================= SUBMIT ================= */
+#form .submit{
+    margin: 24px 0;
+    text-align: center;
+}
+
+#form .submit button{
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(135deg, #ece9ed, #ede4e7);
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 40px;
+    border-radius: 50px;
+    margin: 20px 0 10px;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#form .submit button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* ================= SIGNUP LINK ================= */
+#form .submit #signup{
+    font-size: 14px;
+    margin-top: 6px;
+    display: block;
+    border: none;
+    background: none;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #555;
+    cursor: pointer;
+}
+
+/* ================= ALERT ================= */
+.alert{
+    display: none;
+    color: red;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px){
+    #login .container{
+        width: 100%;
+        padding: 30px 20px;
+    }
+}
