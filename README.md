@@ -51,6 +51,8 @@ Clone the repository:
 
 git clone https://github.com/niroshaabhi/e-commerce-website-for-clothing.git
 
+host link: https://niroshaabhi.github.io/e-commerce-website-for-clothing/
+
 Open the project folder.
 
 Open index.html in your browser.
